@@ -10,6 +10,7 @@
 *
 {
     box-sizing: border-box;
+    border: solid 1px red;
 }
 html
 {
@@ -44,6 +45,19 @@ body
     align-items: center;
 }
 /* small */
+@media (max-width: 768px)
+{
+    .landing .intro-text h1
+    {
+        font-size: 20px !important;
+    }
+    .landing .intro-text p
+    {
+        
+            font-size: 12px !important;
+        
+    }
+}
 @media (min-width: 768px)
 {
 .container   
@@ -158,13 +172,13 @@ body
     background-position: 100% 100%;
     height:calc(100vh - 40px);
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .landing .intro-text
 {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50% , -100%);
     text-align: center;
     width: 800px;
     max-width: 100%;
